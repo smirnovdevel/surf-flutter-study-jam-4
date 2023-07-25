@@ -38,7 +38,7 @@ class HttpService implements IWebService {
     if (!kIsWeb) {
       isConnected = await execute(customInstance);
       if (!isConnected) {
-        throw const ServerException('no_internet');
+        throw const ServerException('Check internet');
       }
     }
     var url = Uri.parse(AppUrls.magic);

@@ -10,7 +10,7 @@ import '../../provider/magic_manager.dart';
 import '../../provider/magic_notifer_provider.dart';
 import '../../widgets/mobile/mobile_bottom_text_widget.dart';
 
-final Logging log = Logging('MagicBallScreen');
+final Logging log = Logging('MobileBallScreen');
 
 class MobileBallScreen extends ConsumerStatefulWidget {
   const MobileBallScreen({super.key});
@@ -49,6 +49,7 @@ class _MagicBallScreenState extends ConsumerState<MobileBallScreen> {
 
   @override
   Widget build(BuildContext context) {
+    log.debug('Screen');
     final state = ref.watch(magicStateProvider);
     log.debug('State: ${state.toString()}');
     final message = ref.read(magicNotiferProvider);

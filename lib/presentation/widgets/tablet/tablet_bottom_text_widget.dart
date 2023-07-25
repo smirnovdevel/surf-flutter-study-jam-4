@@ -24,7 +24,7 @@ class TabletBottomTextWidget extends StatelessWidget {
             textScaleFactor: ScaleSize.textScaleFactor(context),
           ),
           Text(
-            'или потрясите телефон',
+            'или потрясите планшет',
             style: const TextStyle(
               fontFamily: 'Gill Sans',
               color: Color(0xFF727272),

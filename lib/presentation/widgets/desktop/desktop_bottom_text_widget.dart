@@ -23,16 +23,6 @@ class DesktopBottomTextWidget extends StatelessWidget {
             ),
             textScaleFactor: ScaleSize.textScaleFactor(context),
           ),
-          Text(
-            'или потрясите телефон',
-            style: const TextStyle(
-              fontFamily: 'Gill Sans',
-              color: Color(0xFF727272),
-              fontSize: 16.0,
-              fontWeight: FontWeight.w400,
-            ),
-            textScaleFactor: ScaleSize.textScaleFactor(context),
-          ),
         ],
       ),
     );

@@ -35,9 +35,11 @@ class MagicManager {
     } on ServerException catch (ex) {
       log.warning(ex.toString());
       _ref.read(magicStateProvider.notifier).state = MagicState.error;
+      magic = ex.toString();
     } catch (e) {
       log.warning(e.toString());
       _ref.read(magicStateProvider.notifier).state = MagicState.error;
+      magic = e.toString();
     }
     _message.init(magic: magic);
     log.debug('Magic get: $magic');

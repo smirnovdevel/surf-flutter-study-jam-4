@@ -11,7 +11,7 @@ import '../../provider/magic_manager.dart';
 import '../../provider/magic_notifer_provider.dart';
 import '../../widgets/tablet/tablet_bottom_text_widget.dart';
 
-final Logging log = Logging('MagicBallScreen');
+final Logging log = Logging('TabletBallScreen');
 
 class TabletBallScreen extends ConsumerStatefulWidget {
   const TabletBallScreen({super.key});
@@ -50,6 +50,7 @@ class _MagicBallScreenState extends ConsumerState<TabletBallScreen> {
 
   @override
   Widget build(BuildContext context) {
+    log.debug('Screen');
     final state = ref.watch(magicStateProvider);
     final width = MediaQuery.of(context).size.width;
     log.debug('State: ${state.toString()}');
