@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:surf_practice_magic_ball/presentation/screen/magic_ball_screen.dart';
 
 import 'di.dart';
+import 'presentation/screen/main_screen.dart';
 
 void main() async {
   //инициализация зависимостей
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MagicBallScreen(),
+      home: const MainBallScreen(),
     );
   }
 }
