@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-vi/values-vi.xml",
+            "outputFile": "com.example.surf_practice_chat_flutter.app-mergeDebugResources-9:/values-vi/values-vi.xml",
             "map": [
                 {
-                    "source": "/Users/sd/.gradle/caches/transforms-3/fa3e23051d51d4a17ebf5018e7cbf8a1/transformed/core-1.6.0/res/values-vi/values-vi.xml",
+                    "source": "/Users/sd/.gradle/caches/transforms-3/eeb1202da5e132d5d777042e568b2f91/transformed/core-1.6.0/res/values-vi/values-vi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

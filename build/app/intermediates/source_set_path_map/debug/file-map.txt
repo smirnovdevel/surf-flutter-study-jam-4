@@ -1,0 +1,13 @@
+com.example.surf_practice_chat_flutter.app-jetified-annotation-experimental-1.1.0-0 /Users/sd/.gradle/caches/transforms-3/794092c1d5761c8fa9d869b6fdf028b8/transformed/jetified-annotation-experimental-1.1.0/res
+com.example.surf_practice_chat_flutter.app-jetified-window-java-1.0.0-beta04-1 /Users/sd/.gradle/caches/transforms-3/898054b49b6219a436c65849ef555cdf/transformed/jetified-window-java-1.0.0-beta04/res
+com.example.surf_practice_chat_flutter.app-jetified-window-1.0.0-beta04-2 /Users/sd/.gradle/caches/transforms-3/d49d801461b551d602a532203502a9a9/transformed/jetified-window-1.0.0-beta04/res
+com.example.surf_practice_chat_flutter.app-core-1.6.0-3 /Users/sd/.gradle/caches/transforms-3/eeb1202da5e132d5d777042e568b2f91/transformed/core-1.6.0/res
+com.example.surf_practice_chat_flutter.app-debug-4 /Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/android/app/src/debug/res
+com.example.surf_practice_chat_flutter.app-main-5 /Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/android/app/src/main/res
+com.example.surf_practice_chat_flutter.app-pngs-6 /Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/build/app/generated/res/pngs/debug
+com.example.surf_practice_chat_flutter.app-resValues-7 /Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/build/app/generated/res/resValues/debug
+com.example.surf_practice_chat_flutter.app-rs-8 /Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/build/app/generated/res/rs/debug
+com.example.surf_practice_chat_flutter.app-mergeDebugResources-9 /Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/build/app/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.example.surf_practice_chat_flutter.app-mergeDebugResources-10 /Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/build/app/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.example.surf_practice_chat_flutter.app-merged_res-11 /Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/build/app/intermediates/merged_res/debug
+com.example.surf_practice_chat_flutter.app-packaged_res-12 /Volumes/Samsung SSD 980 1TB/Surf/SurfSummerSchoolProject/surf-flutter-study-jam-4/build/sensors_plus/intermediates/packaged_res/debug

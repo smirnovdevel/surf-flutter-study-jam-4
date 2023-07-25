@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shake/shake.dart';
 import 'package:surf_practice_magic_ball/common/app_color.dart';
 import 'package:surf_practice_magic_ball/presentation/provider/magic_state_provider.dart';
 import 'package:surf_practice_magic_ball/presentation/widgets/bottom_text_widget.dart';
@@ -11,16 +12,46 @@ import '../provider/magic_notifer_provider.dart';
 
 final Logging log = Logging('MagicBallScreen');
 
-class MagicBallScreen extends ConsumerWidget {
-  MagicBallScreen({super.key});
-
-  late Color color;
+class MagicBallScreen extends ConsumerStatefulWidget {
+  const MagicBallScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<MagicBallScreen> createState() => _MagicBallScreenState();
+}
+
+class _MagicBallScreenState extends ConsumerState<MagicBallScreen> {
+  late Color color;
+
+  getMagic() {
+    ref.watch(magicManagerProvider).getMagic();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    ShakeDetector detector = ShakeDetector.waitForStart(
+      onPhoneShake: () {
+        log.debug('Shake');
+        getMagic();
+      },
+      minimumShakeCount: 1,
+      shakeSlopTimeMS: 500,
+      shakeCountResetTime: 3000,
+      shakeThresholdGravity: 2.7,
+    );
+    detector.startListening();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final state = ref.watch(magicStateProvider);
     log.debug('State: ${state.toString()}');
-    final message = ref.watch(magicNotiferProvider);
+    final message = ref.read(magicNotiferProvider);
     switch (state) {
       case MagicState.error:
         color = AppColor.error.withOpacity(1.0);
@@ -69,7 +100,7 @@ class MagicBallScreen extends ConsumerWidget {
                       child: GestureDetector(
                         onTap: () {
                           log.debug('Tap ball');
-                          ref.watch(magicManagerProvider).getMagic();
+                          getMagic();
                         },
                         child: Stack(
                           alignment: Alignment.center,
