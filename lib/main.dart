@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:surf_practice_magic_ball/screen/magic_ball_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:surf_practice_magic_ball/presentation/screen/magic_ball_screen.dart';
+
+import 'di.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  //инициализация зависимостей
+  await DI.initializeDependencies();
 
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 /// App,s main widget.
@@ -19,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MagicBallScreen(),
+      home: MagicBallScreen(),
     );
   }
 }
