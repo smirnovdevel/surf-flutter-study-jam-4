@@ -13,9 +13,9 @@
 
 > Реализуйте интерфейс экрана с магическим шаром.
 
-<img src="docs/assets/2023-07-26_07-28-46.png" width="200"></p>
-<img src="docs/assets/2023-07-26_07-36-14.png" width="200"></p>
-<img src="docs/assets/2023-07-26_07-35-50.png" width="200"></p>
+<p align="center"><img src="docs/assets/2023-07-26_07-28-46.png" width="200"></p>
+<p align="center"><img src="docs/assets/2023-07-26_07-36-14.png" width="200"></p>
+<p align="center"><img src="docs/assets/2023-07-26_07-35-50.png" width="200"></p>
 
 ### Задание 2
 
@@ -23,13 +23,13 @@
 
 Архитектура приложения построена на принципах Clean Architecture, layer-first.
 
-Для управления состоянием использован пакет [Riverpod](https://pub.dev/packages/riverpod), StateProvider хранит текущее состояние (normal, wait, result, error), а StateNotifier хранит ответ полученный по API. Стейт отделён от логики отдельным провайдером.
+Для управления состоянием использован пакет [Riverpod](https://pub.dev/packages/riverpod). StateProvider хранит текущее состояние (normal, wait, result, error), а StateNotifier хранит ответ полученный по API. Стейт отделён от логики менеджером.
 
 ### Задание 3
 
 > Добавьте логику для обработки пользовательского вопроса и получения ответа от API.
 
-Дабавлен слой data. Созданы классы для имлетации, разделена логика и данные с помощью репозитория. Настроены зависимости. Настроены обработки ошибок. Добавлен пакет [http](https://pub.dev/packages/http), 
+Дабавлен слой data. Созданы классы имлементации, разделена логика и данные с помощью репозитория. Настроены зависимости. Настроены обработки ошибок. Добавлен пакет [http](https://pub.dev/packages/http), 
 
 ### Задание 4
 
